@@ -1,1 +1,1 @@
-export { default as UserMapping } from "./User";
+export { default as PaginatedUsersMapping } from "./PaginatedUsers";

@@ -1,9 +1,11 @@
 /* istanbul ignore file */
 
 import { createApi, fetchBaseQuery } from "@reduxjs/toolkit/query/react";
-import { PaginatedUsers, User } from "src/types";
+import { PaginatedUsers } from "src/types";
 import { SERVER_URL } from "src/constants";
 import "src/services/i18n";
+import { PaginatedUsersMapping } from "src/mapping";
+import { ReceivedPaginatedUsers } from "src/mapping/PaginatedUsers";
 
 export const api = createApi({
     reducerPath: "api",
@@ -20,6 +22,8 @@ export const api = createApi({
         getUsers: builder.query<PaginatedUsers, void>({
             query: () => "/users",
             providesTags: [{ type: "User", id: "LIST" }],
+            transformResponse: (response) =>
+                PaginatedUsersMapping.fromAPI(response as ReceivedPaginatedUsers) as PaginatedUsers,
         }),
     }),
 });

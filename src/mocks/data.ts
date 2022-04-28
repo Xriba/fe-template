@@ -1,7 +1,6 @@
 import { UserResults } from "src/types";
 
 const now = new Date().toISOString();
-
 const UsersIndex = 20;
 const users: UserResults = [...Array(UsersIndex).keys()].reduce(
     (obj: UserResults, index: number) => {
@@ -23,13 +22,15 @@ const users: UserResults = [...Array(UsersIndex).keys()].reduce(
 );
 
 export const getPaginatedUsers = () => ({
-    pagination: {
-        current_page: 1,
-        has_next: false,
-        has_prev: false,
-        items_per_page: 30,
-        number_of_pages: 1,
-        total_items: 20,
+    metadata: {
+        pagination: {
+            rowsPerPage: 20,
+            pageNumber: 0,
+            sortBy: null,
+            sortDirection: null,
+            totalPages: 5,
+            totalElements: 103,
+        },
     },
-    results: { ...users },
+    data: { ...users },
 });
