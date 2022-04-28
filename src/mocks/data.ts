@@ -2,7 +2,7 @@ import { UserResults } from "src/types";
 
 const now = new Date().toISOString();
 
-let UsersIndex = 20;
+const UsersIndex = 20;
 const users: UserResults = [...Array(UsersIndex).keys()].reduce(
     (obj: UserResults, index: number) => {
         const id = index.toString();

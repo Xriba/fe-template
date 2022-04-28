@@ -63,7 +63,7 @@ const UsersPage = (): JSX.Element => {
             error: usersQueryIsError ? usersQueryIsError.toString() : "",
             reload: usersQueryRefetch,
         };
-    }, [usersQueryIsError, usersQueryRefetch, results, history]);
+    }, [usersQueryIsError, usersQueryRefetch, results, t]);
 
     return (
         <BasePage className={"home-page"}>
