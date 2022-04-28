@@ -1,0 +1,27 @@
+.base-page {
+    width: 100%;
+    height: 100%;
+    padding: 0;
+    border: 0;
+    margin: 0;
+    overflow: auto;
+
+    .nav-list {
+        display: flex;
+        width: auto;
+        padding: 0;
+        border: 0;
+        margin: 0 auto;
+        list-style: none;
+    }
+
+    .nav-item {
+        padding: 8px;
+        border: 1px solid var(--xb--color--black);
+        margin: 8px;
+    }
+
+    main {
+        padding: 16px;
+    }
+}

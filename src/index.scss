@@ -1,0 +1,89 @@
+/* Material icons */
+@import url("https://fonts.googleapis.com/icon?family=Material+Icons");
+
+/* region General styles */
+*,
+*::after,
+*::before {
+    box-sizing: border-box;
+}
+
+html,
+body,
+#root,
+#root > div {
+    width: 100%;
+    height: 100%;
+    padding: 0;
+    border: 0;
+    margin: 0;
+    overflow: hidden;
+}
+
+body {
+    font-family: var(--xb--font--secondary);
+    font-weight: 400;
+    font-size: 14px;
+    color: var(--xb--color--text);
+    background: var(--xb--color--gray-ultralight);
+}
+
+h1,
+h2,
+h3 {
+    margin-top: 0;
+    font-family: var(--xb--font--primary);
+    font-weight: 700;
+    color: var(--xb--color--title);
+}
+
+/* endregion */
+
+/* region Cogo Toast */
+#ct-container .ct-toast {
+    min-width: 400px;
+    width: auto;
+    max-width: 100%;
+    min-height: 48px;
+    height: auto;
+    max-height: 300px;
+    padding: 9px 18px;
+    border-radius: var(--xb--border--radius);
+    box-shadow: 0 6px 14px 0 rgb(6 12 42 / 15%);
+}
+
+#ct-container .ct-toast-info {
+    background-color: var(--xb--color--primary);
+}
+
+#ct-container .ct-toast-success {
+    background-color: var(--xb--color--success);
+}
+
+#ct-container .ct-toast-warn {
+    background-color: var(--xb--color--warning);
+}
+
+#ct-container .ct-toast-error {
+    background-color: var(--xb--color--error);
+}
+
+#ct-container .ct-text-group {
+    width: 100%;
+    margin: 0;
+}
+
+#ct-container .ct-text {
+    display: flex;
+    justify-content: space-between;
+}
+
+#ct-container .ct-toast-message {
+    line-height: 30px;
+    font-family: var(--xb--font--primary);
+    font-size: 18px;
+    font-weight: 700;
+    color: var(--xb--color--white);
+}
+
+/* endregion */

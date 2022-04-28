@@ -1,0 +1,24 @@
+#welcome {
+    margin-bottom: 40px;
+}
+#user {
+    margin-top: 80px;
+}
+#user-data {
+    max-width: 500px;
+    margin: 0 auto;
+
+    td {
+        padding: 8px;
+    }
+    td:first-child {
+        text-align: right;
+    }
+    td:last-child {
+        text-align: left;
+    }
+}
+#user-list .Table {
+    width: 340px;
+    margin: 40px auto;
+}
