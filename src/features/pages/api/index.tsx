@@ -9,7 +9,7 @@ import QueryHandler, { QueryHandlerProps } from "src/components/QueryHandler";
 import { useTranslation } from "react-i18next";
 import BasePage from "layouts/base-page";
 
-const UsersPage = (): JSX.Element => {
+const ApiPage = (): JSX.Element => {
     const { t } = useTranslation();
     const {
         isError: usersQueryIsError,
@@ -37,19 +37,19 @@ const UsersPage = (): JSX.Element => {
             columns: [
                 {
                     key: "lastName",
-                    width: "150px",
+                    width: "200px",
                     label: t("columns.lastName"),
                     tooltip: true,
                 },
                 {
                     key: "firstName",
-                    width: "150px",
+                    width: "200px",
                     label: t("columns.firstName"),
                     tooltip: true,
                 },
                 {
                     key: "email",
-                    width: "max(250px, calc(100% - 625px))",
+                    width: "max(250px, calc(100% - 550px))",
                     label: t("columns.email"),
                     tooltip: true,
                 },
@@ -66,8 +66,8 @@ const UsersPage = (): JSX.Element => {
     }, [usersQueryIsError, usersQueryRefetch, results, t]);
 
     return (
-        <BasePage className={"home-page"}>
-            <h1>{t("pages.users.title")}</h1>
+        <BasePage className={"api-page"}>
+            <h1>{t("pages.api.title")}</h1>
             <QueryHandler {...queryHandlerProps}>
                 <Table<UserResult> {...tableProps} />
             </QueryHandler>
@@ -75,4 +75,4 @@ const UsersPage = (): JSX.Element => {
     );
 };
 
-export default UsersPage;
+export default ApiPage;

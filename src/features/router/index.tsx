@@ -2,13 +2,13 @@
 
 import React from "react";
 import { Route, Routes } from "react-router-dom";
-import HomePage from "pages/home";
-import UsersPage from "pages/users";
+import DemoPage from "pages/demo";
+import ApiPage from "pages/api";
 
 export const Router = (): JSX.Element => (
     <Routes>
-        <Route path={"/"} element={<HomePage />} />
-        <Route path={"/users"} element={<UsersPage />} />
+        <Route path={"/"} element={<DemoPage />} />
+        <Route path={"/api"} element={<ApiPage />} />
     </Routes>
 );
 

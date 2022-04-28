@@ -14,13 +14,13 @@ const translation: ResourceLanguage = {
         updated_at: "DATA DI MODIFICA",
     },
     pages: {
-        home: {
-            title: "Benvenuto nella nostra Home",
-            nav: "Home",
+        demo: {
+            title: "Demo della UI Library",
+            nav: "Demo",
         },
-        users: {
-            title: "Lista utenti",
-            nav: "Utenti",
+        api: {
+            title: "Caricamento dati tramite API call",
+            nav: "API",
         },
     },
 };

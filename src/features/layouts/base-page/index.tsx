@@ -16,10 +16,10 @@ const BasePage: FC<BasePageProps> = ({ children, className }) => {
             <nav>
                 <ul className="nav-list">
                     <li className="nav-item">
-                        <Link to="/">{t("pages.home.nav")}</Link>
+                        <Link to="/">{t("pages.demo.nav")}</Link>
                     </li>
                     <li className="nav-item">
-                        <Link to="/users">{t("pages.users.nav")}</Link>
+                        <Link to="/api">{t("pages.api.nav")}</Link>
                     </li>
                 </ul>
             </nav>
