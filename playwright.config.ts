@@ -19,7 +19,7 @@ const config: PlaywrightTestConfig = {
                 // - if you're testing the demo app of a component library and want to exclude the demo sources
                 // - or part of the code is generated
                 // - or if you're running into any of the other many reasons people have for excluding files
-                exclude: ["src/features/pages/demo/pages/*"],
+                exclude: ["src/features/pages/demo/pages/*", "src/mocks/*", "src/main.tsx"],
                 // Directory in which to write coverage reports
                 resultDir: path.join(__dirname, process.env.COVERAGE_FOLDER ?? ""),
                 // Configure the reports to generate.
