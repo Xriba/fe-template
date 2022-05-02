@@ -67,7 +67,7 @@ const ApiPage = (): JSX.Element => {
 
     return (
         <BasePage className={"api-page"}>
-            <h1>{t("pages.api.title")}</h1>
+            <h1 id="title">{t("pages.api.title")}</h1>
             <QueryHandler {...queryHandlerProps}>
                 <Table<UserResult> {...tableProps} />
             </QueryHandler>

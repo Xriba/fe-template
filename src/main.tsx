@@ -10,7 +10,9 @@ import { Theme } from "@xriba/ui";
 import App from "./App";
 import "./index.scss";
 
-worker.start({ onUnhandledRequest: "bypass" }).then();
+if (process.env.NODE_ENV === "development") {
+    worker.start({ onUnhandledRequest: "bypass" }).then();
+}
 
 ReactDOM.createRoot(document.getElementById("root") as HTMLDivElement).render(
     <React.StrictMode>

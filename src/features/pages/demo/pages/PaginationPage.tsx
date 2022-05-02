@@ -9,7 +9,7 @@ const PaginationPage = () => {
     const [hasNext, setHasNext] = useState(true);
     const [totalPages, setTotalPages] = useState(7);
     const handlePage = useCallback(
-        (page) => {
+        (page: number) => {
             if (page >= totalPages) {
                 setPage(totalPages);
                 setHasPrev(totalPages > 1);
@@ -26,7 +26,7 @@ const PaginationPage = () => {
         },
         [totalPages]
     );
-    const handleSize = useCallback((size) => {
+    const handleSize = useCallback((size: number) => {
         setSize(size);
         setTotalPages(Math.ceil(totalItems / size));
     }, []);

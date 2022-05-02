@@ -31,7 +31,7 @@ export const DemoPage = () => {
 
     return (
         <BasePage className={"demo-page"}>
-            <h1 id="welcome">{t("pages.demo.title")}</h1>
+            <h1 id="title">{t("pages.demo.title")}</h1>
 
             <div>
                 <AddressPage />
