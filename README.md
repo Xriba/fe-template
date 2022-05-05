@@ -29,10 +29,27 @@ npm install -g pnpm
 ```
 
 ## Installation
+Before installing the dependencies, [authentication must be set up](https://docs.microsoft.com/en-us/azure/devops/artifacts/get-started-npm?view=azure-devops&tabs=Windows#set-up-authentication-on-your-development-machine) in order to install the UI Library.<br>
+At the end of the process you will have a file similar to the following in your personal directory.
+
+```config
+; begin auth token
+//pkgs.dev.azure.com/soluzionetasse/_packaging/xriba-clients/npm/registry/:username=[your-email]
+//pkgs.dev.azure.com/soluzionetasse/_packaging/xriba-clients/npm/registry/:_password=[your-base64-password]
+//pkgs.dev.azure.com/soluzionetasse/_packaging/xriba-clients/npm/registry/:email=[your-email]
+//pkgs.dev.azure.com/soluzionetasse/_packaging/xriba-clients/npm/:username=[your-email]
+//pkgs.dev.azure.com/soluzionetasse/_packaging/xriba-clients/npm/:_password=[your-base64-password]
+//pkgs.dev.azure.com/soluzionetasse/_packaging/xriba-clients/npm/:email=[your-email]
+; end auth token
+```
+
+After doing authentication you can clone the project and install the dependencies.
 
 ```bash
 # Clones the project
 git clone git@github.com:Xriba/fe-template.git
+
+# Installs the dependencies, included the UI Library
 pnpm i
 ```
 
@@ -87,3 +104,17 @@ pnpm run e2e
 # Builds the project
 pnpm run build:ci
 ```
+## Project structure
+In the `src` folder we can find the following sub-folders:
+- `components`: components shared in different parts of the app
+- `features`: the structure of the pages, it has three sub-folders:
+  - `layout`: page template files
+  - `pages`: page files and folders
+  - `router`: routing files
+- `mapping`: files for mapping API responses to internal objects
+- `mocks`: API mocking files
+- `services`:
+  - `i18n` configuration files
+  - `API client` configuration files
+- `store`: redux store configuration file
+- `types`: TypeScript type definitions file
