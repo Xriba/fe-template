@@ -2,24 +2,24 @@
 
 This template is already configured for:
 
-**Coding**<br>
-&#x2705; **i18n** => `i18next`<br>
-&#x2705; **Data fetching and caching** => `RTK Query`<br>
-&#x2705; **API mocking** => `msw`<br>
+CODING<br>
+&#x2705; i18n =>  `i18next`<br>
+&#x2705; Data fetching and caching =>  `RTK Query`<br>
+&#x2705; API mocking =>  `msw`<br>
 
-**Static analysis**<br>
-&#x2705; **code linting** => `ESLint`<br>
-&#x2705; **style linting** => `Stylelint`<br>
-&#x2705; **code and style formatting** => `Prettier`<br>
+STATIC ANALYSIS<br>
+&#x2705; code linting =>  `ESLint`<br>
+&#x2705; style linting =>  `Stylelint`<br>
+&#x2705; code and style formatting =>  `Prettier`<br>
 
-**Testing**<br>
-&#x2705; **unit testing + code coverage** => `Vitest`<br>
-&#x2705; **E2E testing + code coverage** => `Playwright`<br>
+**TESTING**<br>
+&#x2705; unit testing + code coverage =>  `Vitest`<br>
+&#x2705; E2E testing + code coverage =>  `Playwright`<br>
 
-**Tooling**<br>
-&#x2705; **package handling** => `pnpm`<br>
-&#x2705; **project building** => `Vite`<br>
-&#x2705; **Git hooks handling** => `Husky`<br>
+**TOOLING**<br>
+&#x2705; package handling =>  `pnpm`<br>
+&#x2705; project building =>  `Vite`<br>
+&#x2705; Git hooks handling =>  `Husky`<br>
 
 ## Requirements
 
