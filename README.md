@@ -2,7 +2,7 @@
 
 This template is already configured for:
 
-**Libraries**<br>
+**Coding**<br>
 &#x2705; **i18n** => `i18next`<br>
 &#x2705; **Data fetching and caching** => `RTK Query`<br>
 &#x2705; **API mocking** => `msw`<br>
@@ -37,8 +37,8 @@ pnpm i
 ```
 
 ## Configuration
-In the root of the project, create a file named `.dev.env` with this content:
 
+In the root of the project, create a file named `.dev.env` with this content:
 
 ```dotenv
 # URLS
@@ -58,9 +58,11 @@ pnpm run dev
 ```
 
 ## Testing
+
 ### Unit tests
+
 Configuration settings are in the `vite.config.ts` and the
- `vitest.setup.ts` files.
+`vitest.setup.ts` files.
 
 ```bash
 # Runs unit tests
@@ -71,6 +73,7 @@ pnpm run coverage
 ```
 
 ### E2E tests
+
 Configuration settings are in the `playwright.config.ts` file.
 
 ```bash
@@ -84,5 +87,3 @@ pnpm run e2e
 # Builds the project
 pnpm run build:ci
 ```
-
-
